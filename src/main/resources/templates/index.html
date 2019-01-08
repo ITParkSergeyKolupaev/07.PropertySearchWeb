@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body bgcolor="#c0c0c0">
+<form method="post">
+    <h1><strong> Property Service </strong></h1>
+    <h4>Enter id</h4>
+    <input name="id">
+    <h4>Enter area</h4>
+    <input name="area">
+    <h4>Enter price</h4>
+    <input name="price">
+    <button>Add house in list</button>
+</form>
+
+<div data-th-each="house : ${houses}">
+    <p>[[${house.id}]]</p>
+    <p>[[${house.area}]]</p>
+    <p>[[${house.price}]]</p>
+</div>
+</body>
+</html>
