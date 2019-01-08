@@ -1,7 +1,7 @@
 language: java
 jdk: openjdk11
 
-script: ./mvnw -e verify
+script: chmod +x ./mvnw && ./mvnw -e verify
 
 after_success:
   - bash <(curl -a https://codecov.io/bash)
